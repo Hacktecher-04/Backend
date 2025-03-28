@@ -6,7 +6,7 @@ dotenv.config();
 
 const getRecommendation = async (req, res) => {
     try {
-        const { ingredients, userId } = req.body;
+        const { ingredients } = req.body;
 
         const prompt = `I have these ingredients: ${ingredients.join(', ')}. Suggest only one recipe with:
            1. Recipe name (short and clear without any special characters and give only name )
